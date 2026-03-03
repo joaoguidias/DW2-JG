@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Entrada, processamento e saída</h1>
+        <form id="nomes" action="" method="get">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="Seu nome..." tabindex="1">
+            <br><br>
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="sobrenome" placeholder="Seu sobrenome..." tabindex="2">
+        </form>
+        <button id="juntar" onclick="juntarNome()" tabindex="3">Juntar</button>
+        <p>Nome completo: (innerText) </p> <!--Só texto-->
+        <p id="nomecompleto">Vai aparecer o nome completo aqui</p>
+        <p>Nome completo: (innerHTML) </p>
+        <p id="nomecompleto1">Vai aparecer o nome completo aqui</p>
+        <p>Nome completo: (innerContent) </p>
+        <p id="nomecompleto2">Vai aparecer o nome completo aqui</p>
+    </div>
+
+    <script src="js/utilidades.js"></script>
+    
+
+</body>
+
+</html>
